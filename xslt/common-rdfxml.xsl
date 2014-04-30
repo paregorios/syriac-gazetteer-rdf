@@ -21,7 +21,13 @@
     </xsl:template>
     
     <xsl:template match="text()" mode="textout">
+        <xsl:if test="substring(., 1, 1) = ' '">
+            <xsl:text> </xsl:text>
+        </xsl:if>
         <xsl:value-of select="normalize-space(.)"/>
+        <xsl:if test="substring(., string-length(.), 1) = ' '">
+            <xsl:text> </xsl:text>
+        </xsl:if>
     </xsl:template>
     
 </xsl:stylesheet>

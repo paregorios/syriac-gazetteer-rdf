@@ -65,17 +65,22 @@
     
     <xsl:template match="t:placeName" mode="pelagios">
         <pleiades:hasName>
-            <rdfs:label>
+            <rdf:Description>
                 <xsl:copy-of select="@xml:lang"/>
-                <xsl:apply-templates mode="textout"/>
-            </rdfs:label>
+                <xsl:attribute name="rdfs:label">
+                    <xsl:apply-templates mode="textout"/>
+                </xsl:attribute>
+            </rdf:Description>
         </pleiades:hasName>
     </xsl:template>
     
     <xsl:template match="t:location" mode="pelagios">
         <pleiades:hasLocation>
-            <geo:lat rdf:datatype="xsd:double"><xsl:value-of select="substring-before(t:geo, ' ')"/></geo:lat>
-            <geo:long rdf:datatype="xsd:double"><xsl:value-of select="substring-after(t:geo, ' ')"/></geo:long>
+            <rdf:Description>
+                <geo:lat rdf:datatype="xsd:double"><xsl:value-of select="normalize-space(substring-before(t:geo, ' '))"/></geo:lat>
+                <geo:long rdf:datatype="xsd:double"><xsl:value-of select="normalize-space(substring-after(t:geo, ' '))"/></geo:long>
+            </rdf:Description>
+            
         </pleiades:hasLocation>
     </xsl:template>
     
