@@ -23,8 +23,15 @@
             <xsl:value-of select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]/t:idno[@type='URI' and starts-with(., 'http://syriaca.org/place/')][1]"/>.html<xsl:text></xsl:text>
         </xsl:variable>
         <pelagios:PlaceRecord rdf:about="{$placedoc}">
+            <!-- title -->
             <xsl:apply-templates select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title[@level='a'][1]"/>
+            <!-- description -->
+            <xsl:apply-templates select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]/t:desc[starts-with(@xml:id, 'abstract-')][1]"/>
         </pelagios:PlaceRecord>
+    </xsl:template>
+    
+    <xsl:template match="t:desc">
+        <dcterms:description><xsl:apply-templates mode="textout"/></dcterms:description>
     </xsl:template>
     
     

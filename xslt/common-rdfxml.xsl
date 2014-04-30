@@ -13,6 +13,7 @@
         <dcterms:title><xsl:apply-templates mode="textout"/></dcterms:title>
     </xsl:template>
     
+    <!-- protect whitespace in mixed content -->
     <xsl:template match="t:*" mode="textout">
         <xsl:for-each select="node()">
             <xsl:apply-templates select="." mode="textout"/>
