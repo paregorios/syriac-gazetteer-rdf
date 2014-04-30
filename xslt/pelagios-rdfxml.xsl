@@ -11,6 +11,7 @@
     xmlns:osgeo="http://data.ordnancesurvey.co.uk/ontology/geometry/"
     xmlns:pelagios="http://pelagios.github.io/vocab/terms#"
     xmlns:pleiades="http://pleiades.stoa.org/places/vocab#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:spatial="http://geovocab.org/spatial#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -35,6 +36,10 @@
 
             <!-- equivalent records in other gazetteers -->
             <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place/t:idno[@type='URI' and starts-with(., 'http://pleiades.stoa.org/places/')]" mode="pelagios-equivalents"/>
+            
+            <!-- place names -->
+            <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place/t:placeName" mode="pelagios-names"/>
+            
         </pelagios:PlaceRecord>
     </xsl:template>
     
@@ -54,6 +59,14 @@
         </skos:closeMatch>
     </xsl:template> 
     
+    <xsl:template match="t:placeName" mode="pelagios-names">
+        <pleiades:hasName>
+            <rdfs:label>
+                <xsl:copy-of select="@xml:lang"/>
+                <xsl:apply-templates mode="textout"/>
+            </rdfs:label>
+        </pleiades:hasName>
+    </xsl:template>
     
     
     

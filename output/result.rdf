@@ -8,6 +8,7 @@
                          xmlns:osgeo="http://data.ordnancesurvey.co.uk/ontology/geometry/"
                          xmlns:pelagios="http://pelagios.github.io/vocab/terms#"
                          xmlns:pleiades="http://pleiades.stoa.org/places/vocab#"
+                         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
                          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                          xmlns:spatial="http://geovocab.org/spatial#"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -16,5 +17,35 @@
       <dcterms:description>A city ofMesopotamia, the capital of the ancient kingdom ofOsrhoene, modern Urfa.</dcterms:description>
       <dcterms:subject>settlement</dcterms:subject>
       <skos:closeMatch rdf:resource="http://pleiades.stoa.org/places/658457"/>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="en">Edessa</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="en">Urfa</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="syr">ܐܘܪܗܝ</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="syr-Syrj">ܐܘܪܗܳܝ</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="syr-Syrj">ܐܘܪܦܰܗ̈</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="ar">الرها</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="ar">اورفه</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="en">Adme</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="en">Antiochia Kallirhoe</rdfs:label>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdfs:label xml:lang="en">Urhay</rdfs:label>
+      </pleiades:hasName>
    </pelagios:PlaceRecord>
 </RDF>
