@@ -13,10 +13,14 @@
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <pelagios:PlaceRecord rdf:about="http://syriaca.org/place/78.html">
+      <rdf:type rdf:resource="foaf:Document"/>
       <dcterms:title>Edessa — ܐܘܪܗܝ</dcterms:title>
+      <foaf:primaryTopic rdf:resource="http://syriaca.org/place/78"/>
+      <skos:closeMatch rdf:resource="http://pleiades.stoa.org/places/658457"/>
+   </pelagios:PlaceRecord>
+   <spatial:Feature rdf:about="http://syriaca.org/place/78">
       <dcterms:description>A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa.</dcterms:description>
       <dcterms:subject>settlement</dcterms:subject>
-      <skos:closeMatch rdf:resource="http://pleiades.stoa.org/places/658457"/>
       <pleiades:hasName>
          <rdf:Description xml:lang="en" rdfs:label="Edessa"/>
       </pleiades:hasName>
@@ -53,5 +57,5 @@
             <geo:long rdf:datatype="xsd:double">38.8</geo:long>
          </rdf:Description>
       </pleiades:hasLocation>
-   </pelagios:PlaceRecord>
+   </spatial:Feature>
 </RDF>
