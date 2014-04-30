@@ -15,5 +15,6 @@
       <dcterms:title>Edessa —ܐܘܪܗܝ</dcterms:title>
       <dcterms:description>A city ofMesopotamia, the capital of the ancient kingdom ofOsrhoene, modern Urfa.</dcterms:description>
       <dcterms:subject>settlement</dcterms:subject>
+      <skos:closeMatch rdf:resource="http://pleiades.stoa.org/places/658457"/>
    </pelagios:PlaceRecord>
 </RDF>

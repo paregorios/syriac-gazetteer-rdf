@@ -23,12 +23,18 @@
             <xsl:value-of select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]/t:idno[@type='URI' and starts-with(., 'http://syriaca.org/place/')][1]"/>.html<xsl:text></xsl:text>
         </xsl:variable>
         <pelagios:PlaceRecord rdf:about="{$placedoc}">
+
             <!-- title -->
             <xsl:apply-templates select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title[@level='a'][1]"/>
+
             <!-- description -->
-            <xsl:apply-templates select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]/t:desc[starts-with(@xml:id, 'abstract-')][1]"/>
+            <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place[1]/t:desc[starts-with(@xml:id, 'abstract-')][1]"/>
+
             <!-- place type -->
-            <xsl:apply-templates select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]" mode="pelagios-subject"/>
+            <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place" mode="pelagios-subject"/>
+
+            <!-- equivalent records in other gazetteers -->
+            <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place/t:idno[@type='URI' and starts-with(., 'http://pleiades.stoa.org/places/')]" mode="pelagios-equivalents"/>
         </pelagios:PlaceRecord>
     </xsl:template>
     
@@ -39,6 +45,14 @@
     <xsl:template match="t:place" mode="pelagios-subject">
         <dcterms:subject><xsl:apply-templates mode="textout" select="@type"/></dcterms:subject>
     </xsl:template>
+    
+    <xsl:template match="t:idno" mode="pelagios-equivalents">
+        <skos:closeMatch>
+            <xsl:attribute name="rdf:resource">
+                <xsl:apply-templates select="." mode="textout"/>
+            </xsl:attribute>
+        </skos:closeMatch>
+    </xsl:template> 
     
     
     
