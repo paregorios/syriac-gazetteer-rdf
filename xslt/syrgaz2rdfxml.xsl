@@ -11,6 +11,7 @@
         MESA: http://wiki.collex.org/index.php/Submitting_RDF
         Pelagios: https://github.com/pelagios/pelagios-cookbook/wiki/Pelagios-Gazetteer-Interconnection-Format -->
     
+    <xsl:import href="common-rdfxml.xsl" />
     <xsl:import href="pelagios-rdfxml.xsl" />
     <xsl:import href="mesa-rdfxml.xsl" />
     
