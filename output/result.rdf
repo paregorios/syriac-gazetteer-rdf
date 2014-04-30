@@ -11,5 +11,7 @@
                          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                          xmlns:spatial="http://geovocab.org/spatial#"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-                         rdf:about="http://syriaca.org/place/78.html"/>
+                         rdf:about="http://syriaca.org/place/78.html">
+      <dcterms:title>Edessa —ܐܘܪܗܝ</dcterms:title>
+   </pelagios:PlaceRecord>
 </RDF>
