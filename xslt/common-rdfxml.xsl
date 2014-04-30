@@ -3,6 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:t="http://www.tei-c.org/ns/1.0"
     xmlns:syriaca="http://syriaca.org"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     exclude-result-prefixes="xs t syriaca"
     version="2.0">

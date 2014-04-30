@@ -14,10 +14,11 @@
     <xsl:import href="common-rdfxml.xsl" />
     <xsl:import href="pelagios-rdfxml.xsl" />
     <xsl:import href="mesa-rdfxml.xsl" />
+
+    <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
     
     <xsl:template match="/">
         <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-            <xsl:call-template name="common-rdfxml"/>
             <xsl:call-template name="pelagios-rdfxml"/>
             <xsl:call-template name="mesa-rdfxml"/>
         </RDF>

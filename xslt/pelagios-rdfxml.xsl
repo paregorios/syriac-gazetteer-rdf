@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:t="http://www.tei-c.org/ns/1.0"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:syriaca="http://syriaca.org"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -18,6 +19,14 @@
     version="2.0">
     
     <xsl:template name="pelagios-rdfxml">
+        <xsl:variable name="placedoc">
+            <xsl:value-of select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]/t:idno[@type='URI' and starts-with(., 'http://syriaca.org/place/')][1]"/>.html<xsl:text></xsl:text>
+        </xsl:variable>
+        <pelagios:PlaceRecord rdf:about="{$placedoc}">
+            
+        </pelagios:PlaceRecord>
     </xsl:template>
+    
+    
     
 </xsl:stylesheet>
