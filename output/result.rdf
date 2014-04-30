@@ -47,5 +47,9 @@
       <pleiades:hasName>
          <rdfs:label xml:lang="en">Urhay</rdfs:label>
       </pleiades:hasName>
+      <pleiades:hasLocation>
+         <geo:lat rdf:datatype="xsd:double">37.15</geo:lat>
+         <geo:long rdf:datatype="xsd:double">38.8</geo:long>
+      </pleiades:hasLocation>
    </pelagios:PlaceRecord>
 </RDF>

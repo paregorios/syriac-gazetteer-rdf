@@ -38,7 +38,11 @@
             <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place/t:idno[@type='URI' and starts-with(., 'http://pleiades.stoa.org/places/')]" mode="pelagios-equivalents"/>
             
             <!-- place names -->
-            <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place/t:placeName" mode="pelagios-names"/>
+            <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place/t:placeName" mode="pelagios"/>
+            
+            <!-- locations -->
+            <xsl:apply-templates select="/t:TEI/t:text/t:body/t:listPlace/t:place/t:location[@type='gps']" mode="pelagios"/>
+                
             
         </pelagios:PlaceRecord>
     </xsl:template>
@@ -59,7 +63,7 @@
         </skos:closeMatch>
     </xsl:template> 
     
-    <xsl:template match="t:placeName" mode="pelagios-names">
+    <xsl:template match="t:placeName" mode="pelagios">
         <pleiades:hasName>
             <rdfs:label>
                 <xsl:copy-of select="@xml:lang"/>
@@ -68,6 +72,12 @@
         </pleiades:hasName>
     </xsl:template>
     
+    <xsl:template match="t:location" mode="pelagios">
+        <pleiades:hasLocation>
+            <geo:lat rdf:datatype="xsd:double"><xsl:value-of select="substring-before(t:geo, ' ')"/></geo:lat>
+            <geo:long rdf:datatype="xsd:double"><xsl:value-of select="substring-after(t:geo, ' ')"/></geo:long>
+        </pleiades:hasLocation>
+    </xsl:template>
     
     
     
