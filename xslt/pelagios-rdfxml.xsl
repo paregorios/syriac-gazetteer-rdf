@@ -27,12 +27,20 @@
             <xsl:apply-templates select="/t:TEI/t:teiHeader/t:fileDesc/t:titleStmt/t:title[@level='a'][1]"/>
             <!-- description -->
             <xsl:apply-templates select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]/t:desc[starts-with(@xml:id, 'abstract-')][1]"/>
+            <!-- place type -->
+            <xsl:apply-templates select="/t:TEI/t:text[1]/t:body[1]/t:listPlace[1]/t:place[1]" mode="pelagios-subject"/>
         </pelagios:PlaceRecord>
     </xsl:template>
     
     <xsl:template match="t:desc">
         <dcterms:description><xsl:apply-templates mode="textout"/></dcterms:description>
     </xsl:template>
+    
+    <xsl:template match="t:place" mode="pelagios-subject">
+        <dcterms:subject><xsl:apply-templates mode="textout" select="@type"/></dcterms:subject>
+    </xsl:template>
+    
+    
     
     
     
