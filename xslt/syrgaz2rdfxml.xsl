@@ -16,6 +16,7 @@
     
     <xsl:template match="/">
         <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <xsl:call-template name="common-rdfxml"/>
             <xsl:call-template name="pelagios-rdfxml"/>
             <xsl:call-template name="mesa-rdfxml"/>
         </RDF>
