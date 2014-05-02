@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF 
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+   xmlns:gn="http://www.geonames.org/ontology#"
+   xmlns:osgeo="http://data.ordnancesurvey.co.uk/ontology/geometry/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:spatial="http://geovocab.org/spatial#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   >
+   <spatial:Feature rdf:about="http://syriaca.org/place/78">
+      <gn:name xml:lang="en">Edessa — ܐܘܪܗܝ</gn:name>
+      <skos:closeMatch rdf:resource="http://pleiades.stoa.org/places/658457#this"/>
+      <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Edessa"/>
+      <skos:closeMatch rdf:resource="http://sws.geonames.org/298333/"/>
+      <rdfs:comment>A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa.</rdfs:comment>
+      <dcterms:subject>settlement</dcterms:subject>
+      <gn:alternateName xml:lang="en">Edessa</gn:alternateName>
+      <gn:alternateName xml:lang="en">Urfa</gn:alternateName>
+      <gn:alternateName xml:lang="syr">ܐܘܪܗܝ</gn:alternateName>
+      <gn:alternateName xml:lang="syr-Syrj">ܐܘܪܗܳܝ</gn:alternateName>
+      <gn:alternateName xml:lang="syr-Syrj">ܐܘܪܦܰܗ̈</gn:alternateName>
+      <gn:alternateName xml:lang="ar">الرها</gn:alternateName> 
+      <gn:alternateName xml:lang="ar">اورفه</gn:alternateName> 
+      <gn:alternateName xml:lang="en">Adme</gn:alternateName> 
+      <gn:alternateName xml:lang="en">Antiochia Kallirhoe</gn:alternateName>
+      <gn:alternateName xml:lang="en">Urhay</gn:alternateName>
+      <geo:lat rdf:datatype="xsd:double">37.15</geo:lat>
+      <geo:long rdf:datatype="xsd:double">38.8</geo:long>
+      <foaf:primaryTopicOf rdf:resource="http://syriaca.org/place/78.html"/>
+   </spatial:Feature>
+</RDF>

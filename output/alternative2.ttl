@@ -1,0 +1,17 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://syriaca.org/place/78>
+  a <http://geovocab.org/spatial#Feature> ;
+  gn:name "Edessa — ܐܘܪܗܝ"@en ;
+  skos:closeMatch <http://pleiades.stoa.org/places/658457#this>, <http://dbpedia.org/resource/Edessa>, <http://sws.geonames.org/298333/> ;
+  rdfs:comment "A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa." ;
+  dc:subject "settlement" ;
+  gn:alternateName "Edessa"@en, "Urfa"@en, "ܐܘܪܗܝ"@syr, "ܐܘܪܗܳܝ"@syr-Syrj, "ܐܘܪܦܰܗ̈"@syr-Syrj, "الرها"@ar, "اورفه"@ar, "Adme"@en, "Antiochia Kallirhoe"@en, "Urhay"@en ;
+  geo:lat 3.715000e+1 ;
+  geo:long 3.880000e+1 ;
+  foaf:primaryTopicOf <http://syriaca.org/place/78.html> .
