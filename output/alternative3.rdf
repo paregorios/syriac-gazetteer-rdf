@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+   xmlns:pleiades="http://pleiades.stoa.org/places/vocab#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   
+   <rdf:Description rdf:about="http://syriaca.org/place/78">
+      <dctermstitle xml:lang="en">Edessa — ܐܘܪܗܝ</dctermstitle>
+      <dctermsdescription>A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa.</dctermsdescription>
+      <dctermssubject>settlement</dctermssubject>
+      <skos:closeMatch rdf:resource="http://pleiades.stoa.org/places/658457#this"/>
+      <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Edessa"/>
+      <skos:closeMatch rdf:resource="http://sws.geonames.org/298333/"/>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="en">Edessa</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="en">Urfa</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="syr">ܐܘܪܗܝ</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="syr-Syrj">ܐܘܪܗܳܝ</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="syr-Syrj">ܐܘܪܦܰܗ̈</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="ar">الرها</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="ar">اورفه</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="en">Adme</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="en">Antiochia Kallirhoe</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasName>
+         <rdf:Description>
+            <rdfs:label xml:lang="en">Urhay</rdfs:label>
+         </rdf:Description>
+      </pleiades:hasName>
+      <pleiades:hasLocation>
+         <rdf:Description>
+            <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.715000e+1</geo:lat>
+            <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.880000e+1</geo:long>
+         </rdf:Description>
+      </pleiades:hasLocation>
+      <foaf:primaryTopicOf rdf:resource="http://syriaca.org/place/78.html"/>
+   </rdf:Description>
+   
+</rdf:RDF>
