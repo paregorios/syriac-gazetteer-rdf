@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:osgeo="http://data.ordnancesurvey.co.uk/ontology/geometry/"
+   xmlns:pleiades="http://pleiades.stoa.org/places/vocab#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   
+   <rdf:Description rdf:about="http://pleiades.stoa.org/places/658457#this">
+      <dc:title xml:lang="en">Edessa/Antiochia ad Callirhoem</dc:title>
+      <dc:description>Edessa/Antiochia ad Callirhoem was ancient settlement of upper Mesopotamia, refounded by Seleucus I Nikator.</dc:description>
+      <dc:subject>settlement</dc:subject>
+      <skos:closeMatch rdf:resource="http://syriaca.org/place/78"/>
+      <skos:closeMatch rdf:resource="http://dbpedia.org/resource/Edessa"/>
+      <skos:closeMatch rdf:resource="http://sws.geonames.org/298333/"/>
+      <pleiades:hasName>
+         <pleiades:Name rdf:about="http://pleiades.stoa.org/places/658457/ar-ruha">
+            <pleiades:nameAttested xml:lang="ar">الرها</pleiades:nameAttested>
+            <pleiades:nameRomanized>ar-Ruha</pleiades:nameRomanized>
+         </pleiades:Name>
+      </pleiades:hasName>
+      
+      <pleiades:hasName>
+         <pleiades:Name rdf:about="http://pleiades.stoa.org/places/658457/edessa">
+            <pleiades:nameAttested xml:lang="grc">Ἔδεσσα</pleiades:nameAttested>
+            <pleiades:nameRomanized>Edessa</pleiades:nameRomanized>
+         </pleiades:Name>
+      </pleiades:hasName>
+      
+      <pleiades:hasLocation>
+         <pleiades:Location rdf:about="http://pleiades.stoa.org/places/658457/darmc-location-34915">
+            <dc:title>DARMC location 34915</dc:title>
+            <osgeo:asWKT>POINT (38.7761679999999984 37.1764820000000000)</osgeo:asWKT>
+         </pleiades:Location>
+      </pleiades:hasLocation>
+      
+      <pleiades:hasLocation>
+         <pleiades:Location rdf:about="http://pleiades.stoa.org/places/658457/dare-location">
+            <dc:title>DARE Location</dc:title>
+            <osgeo:asGeoJSON>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [38.786695999999999, 37.148632999999997]}</osgeo:asGeoJSON>
+         </pleiades:Location>
+      </pleiades:hasLocation>
+      
+      <foaf:isPrimaryTopicOf rdf:resource="http://pleiades.stoa.org/places/658457"/>
+   </rdf:Description>
+   
+</rdf:RDF>

@@ -1,0 +1,44 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix osgeo: <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix pleiades: <http://pleiades.stoa.org/places/vocab#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://pleiades.stoa.org/places/658457#this>
+	a <http://geovocab.org/spatial#Feature> ;
+	dcterms:title "Edessa/Antiochia ad Callirhoem"@en ;
+	dcterms:description "Edessa/Antiochia ad Callirhoem was ancient settlement of upper Mesopotamia, refounded by Seleucus I Nikator." ;
+	dcterms:subject "settlement" ;
+	skos:closeMatch 
+		<http://syriaca.org/place/78> , 
+		<http://dbpedia.org/resource/Edessa> , 
+		<http://sws.geonames.org/298333/> ;
+	pleiades:hasName 
+		<http://pleiades.stoa.org/places/658457/ar-ruha> ,
+		<http://pleiades.stoa.org/places/658457/edessa> ;
+	pleiades:hasLocation 
+		<http://pleiades.stoa.org/places/658457/darmc-location-34915> ,
+		<http://pleiades.stoa.org/places/658457/dare-location> ;
+	foaf:isPrimaryTopicOf <http://pleiades.stoa.org/places/658457> .
+
+<http://pleiades.stoa.org/places/658457/darmc-location-34915>
+	a pleiades:Location ;
+	dcterms:title "DARMC location 34915" ;
+	osgeo:asWKT "POINT (38.7761679999999984 37.1764820000000000)" .
+
+<http://pleiades.stoa.org/places/658457/dare-location>
+	a pleiades:Location ;
+	dcterms:title "DARE Location" ;
+	osgeo:asGeoJSON "{\"type\": \"Point\", \"coordinates\": [38.786695999999999, 37.148632999999997]}" .
+
+<http://pleiades.stoa.org/places/658457/ar-ruha> 
+	a pleiades:Name ;
+	pleiades:nameAttested "الرها"@ar ;
+	pleiades:nameRomanized "ar-Ruha" .
+
+<http://pleiades.stoa.org/places/658457/edessa> 
+	a pleiades:Name ;
+	pleiades:nameAttested "Ἔδεσσα"@grc ;
+	pleiades:nameRomanized "Edessa" .
